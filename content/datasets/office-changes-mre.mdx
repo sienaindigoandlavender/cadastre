@@ -1,0 +1,21 @@
+---
+type: dataset
+id: office-changes-mre
+title_en: Office des Changes — MRE remittances and FDI
+title_fr: Office des Changes — Transferts MRE et IDE
+country_scope: [MA]
+publisher_en: Office des Changes
+publisher_fr: Office des Changes
+license: public
+license_url: https://www.oc.gov.ma/
+update_frequency: monthly
+fetch_method: manual
+fetch_path: data/raw/office-des-changes/
+processed_path: data/processed/oc-mre.json
+fields:
+  - { name: period, type: string, format: YYYY-MM }
+  - { name: mre_inflow_mad, type: number }
+  - { name: fdi_sector, type: string }
+  - { name: fdi_amount_mad, type: number }
+status: live
+---

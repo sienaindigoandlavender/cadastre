@@ -1,0 +1,11 @@
+{
+  "manifest": {
+    "source_url": "https://www.oc.gov.ma/",
+    "fetched_at": null,
+    "row_count": 0,
+    "schema_hash": null,
+    "status": "pending",
+    "notes": "Awaiting initial fetch."
+  },
+  "rows": []
+}

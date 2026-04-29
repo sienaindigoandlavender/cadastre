@@ -1,0 +1,19 @@
+---
+type: dataset
+id: microsoft-buildings-marrakech
+title_en: Microsoft Building Footprints — Marrakech bounding box
+title_fr: Empreintes bâties Microsoft — Emprise Marrakech
+country_scope: [MA]
+publisher_en: Microsoft
+publisher_fr: Microsoft
+license: cc-by
+license_url: https://github.com/microsoft/GlobalMLBuildingFootprints
+update_frequency: irregular
+fetch_method: bulk
+fetch_path: data/raw/microsoft-buildings/
+processed_path: data/processed/buildings-marrakech.geojson
+fields:
+  - { name: geometry, type: polygon }
+  - { name: confidence, type: number }
+status: live
+---

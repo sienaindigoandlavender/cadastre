@@ -1,0 +1,21 @@
+---
+type: dataset
+id: ghsl-built-marrakech
+title_en: GHSL Built-up Area — Marrakech (1990, 2000, 2010, 2020)
+title_fr: GHSL Surfaces bâties — Marrakech (1990, 2000, 2010, 2020)
+country_scope: [MA]
+publisher_en: European Commission Joint Research Centre
+publisher_fr: Centre commun de recherche, Commission européenne
+license: cc-by
+license_url: https://ghsl.jrc.ec.europa.eu/
+update_frequency: irregular
+first_period: '1990'
+latest_period: '2020'
+fetch_method: bulk
+fetch_path: data/raw/ghsl/
+processed_path: data/processed/ghsl-marrakech.json
+fields:
+  - { name: epoch, type: number }
+  - { name: built_up_km2, type: number }
+status: live
+---

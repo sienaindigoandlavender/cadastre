@@ -1,0 +1,22 @@
+---
+type: dataset
+id: bkam-ipai
+title_en: Bank Al-Maghrib Property Asset Price Index (IPAI)
+title_fr: Indice des Prix des Actifs Immobiliers (IPAI) - Bank Al-Maghrib
+country_scope: [MA]
+publisher_en: Bank Al-Maghrib
+publisher_fr: Bank Al-Maghrib
+license: public
+license_url: https://www.bkam.ma/
+update_frequency: quarterly
+first_period: 2006-Q1
+fetch_method: manual
+fetch_path: data/raw/bkam/ipai/
+processed_path: data/processed/bkam-ipai.json
+fields:
+  - { name: period, type: string, format: YYYY-Qn }
+  - { name: index_value, type: number }
+  - { name: yoy_change, type: number }
+  - { name: segment, type: enum, values: [residential, commercial, land] }
+status: live
+---

@@ -1,0 +1,21 @@
+---
+type: dataset
+id: hcp-population
+title_en: HCP Morocco — Population and household statistics
+title_fr: HCP Maroc — Statistiques de population et de ménages
+country_scope: [MA]
+publisher_en: Haut-Commissariat au Plan
+publisher_fr: Haut-Commissariat au Plan
+license: public
+license_url: https://www.hcp.ma/
+update_frequency: annual
+fetch_method: manual
+fetch_path: data/raw/hcp/
+processed_path: data/processed/hcp-population.json
+fields:
+  - { name: region, type: string }
+  - { name: year, type: number }
+  - { name: population, type: number }
+  - { name: households, type: number }
+status: live
+---

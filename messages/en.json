@@ -1,0 +1,80 @@
+{
+  "site": {
+    "name": "Cadastre",
+    "tagline": "Pan-African real estate intelligence",
+    "description": "Open, sourced data on land tenure, property markets, cadastral systems, and the built environment across African countries."
+  },
+  "nav": {
+    "countries": "Countries",
+    "glossary": "Glossary",
+    "methodology": "Methodology",
+    "sources": "Sources",
+    "about": "About"
+  },
+  "common": {
+    "lastUpdated": "Last updated",
+    "lastFetched": "Last fetched",
+    "viewData": "View data",
+    "viewChart": "View chart",
+    "cite": "Cite",
+    "permalink": "Permalink",
+    "copy": "Copy",
+    "copied": "Copied",
+    "source": "Source",
+    "sources": "Sources",
+    "methodology": "Methodology",
+    "license": "License",
+    "noData": "Data ingestion pending. See methodology.",
+    "loading": "Loading"
+  },
+  "entity": {
+    "country": "Country",
+    "city": "City",
+    "quarter": "Quarter",
+    "legal": "Legal concept",
+    "dataset": "Dataset",
+    "glossary": "Glossary term"
+  },
+  "kpi": {
+    "population": "Population",
+    "area": "Area",
+    "currency": "Currency",
+    "capital": "Capital",
+    "gdp": "GDP",
+    "titleSystems": "Title systems",
+    "governingBody": "Governing body",
+    "dwellings": "Dwellings",
+    "households": "Households"
+  },
+  "panel": {
+    "map": "Map",
+    "timeSeries": "Trend",
+    "distribution": "Distribution",
+    "comparables": "Comparables",
+    "relatedEntities": "Related",
+    "countryVariants": "Country variants",
+    "quickFacts": "Quick facts"
+  },
+  "citation": {
+    "heading": "Cite this page",
+    "bibtex": "BibTeX",
+    "apa": "APA",
+    "chicago": "Chicago"
+  },
+  "footer": {
+    "rights": "Open data, attribution required.",
+    "contact": "Contact"
+  },
+  "locale": {
+    "switchTo": "Switch language",
+    "current": "Current language"
+  },
+  "breadcrumb": {
+    "home": "Home"
+  },
+  "status": {
+    "live": "Live",
+    "draft": "Draft",
+    "stub": "Stub"
+  }
+}

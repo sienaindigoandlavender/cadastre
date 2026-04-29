@@ -1,0 +1,80 @@
+{
+  "site": {
+    "name": "Cadastre",
+    "tagline": "Renseignement immobilier panafricain",
+    "description": "Données ouvertes et sourcées sur le foncier, les marchés immobiliers, les systèmes cadastraux et le cadre bâti des pays africains."
+  },
+  "nav": {
+    "countries": "Pays",
+    "glossary": "Glossaire",
+    "methodology": "Méthodologie",
+    "sources": "Sources",
+    "about": "À propos"
+  },
+  "common": {
+    "lastUpdated": "Dernière mise à jour",
+    "lastFetched": "Dernière collecte",
+    "viewData": "Voir les données",
+    "viewChart": "Voir le graphique",
+    "cite": "Citer",
+    "permalink": "Lien permanent",
+    "copy": "Copier",
+    "copied": "Copié",
+    "source": "Source",
+    "sources": "Sources",
+    "methodology": "Méthodologie",
+    "license": "Licence",
+    "noData": "Collecte des données en cours. Voir la méthodologie.",
+    "loading": "Chargement"
+  },
+  "entity": {
+    "country": "Pays",
+    "city": "Ville",
+    "quarter": "Quartier",
+    "legal": "Notion juridique",
+    "dataset": "Jeu de données",
+    "glossary": "Terme du glossaire"
+  },
+  "kpi": {
+    "population": "Population",
+    "area": "Superficie",
+    "currency": "Monnaie",
+    "capital": "Capitale",
+    "gdp": "PIB",
+    "titleSystems": "Régimes de titre",
+    "governingBody": "Autorité",
+    "dwellings": "Logements",
+    "households": "Ménages"
+  },
+  "panel": {
+    "map": "Carte",
+    "timeSeries": "Évolution",
+    "distribution": "Répartition",
+    "comparables": "Comparables",
+    "relatedEntities": "Liens",
+    "countryVariants": "Variantes par pays",
+    "quickFacts": "En bref"
+  },
+  "citation": {
+    "heading": "Citer cette page",
+    "bibtex": "BibTeX",
+    "apa": "APA",
+    "chicago": "Chicago"
+  },
+  "footer": {
+    "rights": "Données ouvertes, attribution requise.",
+    "contact": "Contact"
+  },
+  "locale": {
+    "switchTo": "Changer de langue",
+    "current": "Langue actuelle"
+  },
+  "breadcrumb": {
+    "home": "Accueil"
+  },
+  "status": {
+    "live": "Publié",
+    "draft": "Brouillon",
+    "stub": "Ébauche"
+  }
+}

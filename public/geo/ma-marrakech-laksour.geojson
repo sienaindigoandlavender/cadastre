@@ -1,0 +1,28 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "iso": "MA",
+        "city": "marrakech",
+        "quarter": "laksour",
+        "name_en": "Laksour",
+        "name_fr": "Laksour",
+        "source": "Cadastre placeholder polygon, replace with surveyed boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-7.9945, 31.6295],
+            [-7.9893, 31.6295],
+            [-7.9893, 31.6328],
+            [-7.9945, 31.6328],
+            [-7.9945, 31.6295]
+          ]
+        ]
+      }
+    }
+  ]
+}

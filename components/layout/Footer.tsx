@@ -1,11 +1,17 @@
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import { getCountries } from '@/lib/content/loader';
+import { localizedName, localizedSlug } from '@/lib/i18n/slugs';
 import type { Locale } from '@/lib/i18n/config';
 
 export function Footer({ locale }: { locale: Locale }) {
   const t = useTranslations('footer');
   const tn = useTranslations('nav');
   const ts = useTranslations('site');
+
+  const countries = getCountries().sort((a, b) =>
+    localizedName(a.frontmatter, locale).localeCompare(localizedName(b.frontmatter, locale))
+  );
 
   return (
     <footer className="border-t border-[#e5e5e5] mt-16">
@@ -38,9 +44,24 @@ export function Footer({ locale }: { locale: Locale }) {
         </ul>
       </div>
       <div className="border-t border-[#e5e5e5]">
-        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between text-xs text-ink-tertiary">
-          <span>{t('rights')}</span>
-          <span className="mono">© {new Date().getFullYear()}</span>
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-wrap items-center justify-between gap-4 text-xs text-ink-tertiary">
+          <nav aria-label={tn('countries')} className="flex flex-wrap items-center gap-2 mono uppercase tracking-[0.08em]">
+            {countries.map((c, i) => (
+              <span key={c.frontmatter.iso} className="flex items-center gap-2">
+                {i > 0 ? <span className="text-ink-tertiary">|</span> : null}
+                <Link
+                  href={`/${locale}/${localizedSlug(c.frontmatter, locale)}`}
+                  className="hover:text-ink-primary"
+                >
+                  {localizedName(c.frontmatter, locale)}
+                </Link>
+              </span>
+            ))}
+          </nav>
+          <div className="flex items-center gap-4">
+            <span>{t('rights')}</span>
+            <span>© {new Date().getFullYear()}</span>
+          </div>
         </div>
       </div>
     </footer>

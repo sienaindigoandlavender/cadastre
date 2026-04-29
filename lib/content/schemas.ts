@@ -17,6 +17,7 @@ export const countrySchema = z.object({
   official_name_en: z.string(),
   official_name_fr: z.string(),
   capital: z.string(),
+  capital_coordinates: z.tuple([z.number(), z.number()]).optional(),
   currency: z.string(),
   official_languages: z.array(z.string()),
   working_languages: z.array(z.string()),

@@ -62,8 +62,7 @@
     "chicago": "Chicago"
   },
   "footer": {
-    "rights": "Open data, attribution required.",
-    "contact": "Contact"
+    "rights": "Open data, attribution required."
   },
   "locale": {
     "switchTo": "Switch language",

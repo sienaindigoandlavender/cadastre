@@ -1,13 +1,13 @@
 # TODO
 
-Tracks open work and decisions deferred to Jacqueline. Per the brief, never invent data — surface every uncertainty here.
+Tracks open work. Per the brief, never invent data — surface every uncertainty here.
 
-## Open questions for Jacqueline (do not decide unilaterally)
+## Decisions on record
 
-- Final domain name (working title is "Cadastre"; placeholder routing under `cadastre.dancingwithlions.com`).
-- Whether the anonymised transaction registry is exposed publicly in Phase 1 or held for a gated tier.
-- Whether the About page should mention Dancing with Lions parentage or stand fully independent.
-- Country priority order beyond Morocco → Tunisia (currently: Senegal, Egypt, Côte d’Ivoire, then Anglophone tier).
+- **Working name:** "Cadastre". Final domain TBD; routing parameterised via `NEXT_PUBLIC_SITE_URL`.
+- **Anonymised transaction registry:** treated as data. No personal attribution surfaces anywhere on the site.
+- **Page voice:** institutional only. No founder bio, no parent-organisation mention, no first-person.
+- **Country priority:** Morocco → Tunisia → up-and-coming Anglophone economies (specific country list to be defined when the Tunisia build closes).
 
 ## Phase 1 Weeks 4–6 (deferred from this scaffolding pass)
 
@@ -21,7 +21,7 @@ All `data/processed/*.json` currently ship as empty arrays with `manifest.status
 - `microsoft-buildings/fetch-marrakech.ts` — Microsoft + Meta footprints merged for the Marrakech bounding box.
 - `ghsl/fetch-built-up.ts` — GHSL built-up rasters for 1990 / 2000 / 2010 / 2020.
 - `listings/scrape-mubawab.ts`, `listings/scrape-properstar.ts` — Phase 2.
-- Anonymised transaction registry ingestion (subject to Jacqueline’s decision on public surfacing).
+- Anonymised transaction registry ingestion pipeline.
 
 ### Mapbox (Week 5)
 
@@ -36,22 +36,21 @@ All `data/processed/*.json` currently ship as empty arrays with `manifest.status
 - Lighthouse 95+ audit on all entity pages.
 - axe-core / WCAG AA pass.
 - `safeSitemapUrl()` pattern from Slow Morocco — currently inlined, port the proper implementation.
-- Vercel deploy under `cadastre.dancingwithlions.com`.
+- Production deploy once domain is decided (set `NEXT_PUBLIC_SITE_URL`).
 
 ### Legal corpus
 
 - Index Law 39-08 article-by-article (FR canonical, EN working translation), with article anchors.
 - Add notarial + ANCFCC fee schedules as structured data (currently absent).
 - Reach 30 glossary terms (currently 14).
-- Reach the seven Phase 1 legal concepts: melkia, titre foncier, immatriculation, adoul, mandat exclusif, compromis, acte authentique — done, plus ANCFCC.
+- Phase 1 legal concepts: melkia, titre foncier, immatriculation, adoul, mandat exclusif, compromis, acte authentique, ANCFCC — done.
 
 ### Content gaps
 
 - City pages for Casablanca and Rabat are stubs (frontmatter only, no quarters).
-- Tunisia is a stub; Senegal, Egypt, Côte d’Ivoire to be added per priority order.
+- Tunisia is a stub. Define the Anglophone country priority list once Tunisia build is in progress.
 
 ## Architectural debt
 
 - `_dev/` Storybook-style example routes are not yet implemented (brief Section 6.4).
 - 90-day freshness gate on "live" datasets is not yet enforced at build time.
-- Transaction registry public-surface gating logic depends on Jacqueline’s decision.

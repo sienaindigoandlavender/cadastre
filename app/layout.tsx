@@ -2,7 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://cadastre.dancingwithlions.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://cadastre.example'),
   title: {
     default: 'Cadastre',
     template: '%s · Cadastre'

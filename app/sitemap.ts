@@ -10,7 +10,7 @@ import {
 import { locales } from '@/lib/i18n/config';
 import { localizedSlug } from '@/lib/i18n/slugs';
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://cadastre.dancingwithlions.com';
+const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://cadastre.example';
 
 function safe(path: string): string {
   if (!path) return BASE;

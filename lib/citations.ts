@@ -9,7 +9,7 @@ export type CitationInput = {
   authors?: string[];
 };
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://cadastre.dancingwithlions.com';
+const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://cadastre.example';
 
 function isoYear(d: string | undefined): number | undefined {
   if (!d) return undefined;

@@ -9,13 +9,12 @@ export function Footer({ locale }: { locale: Locale }) {
 
   return (
     <footer className="border-t border-[#e5e5e5] mt-16">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-2 sm:grid-cols-4 gap-8 text-sm">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-2 sm:grid-cols-3 gap-8 text-sm">
         <div className="col-span-2 sm:col-span-2 flex flex-col gap-2">
           <span className="font-medium">{ts('name')}</span>
           <p className="text-xs text-ink-secondary max-w-md">{ts('description')}</p>
         </div>
         <ul className="flex flex-col gap-2">
-          <li className="label-tiny">{tn('countries')}</li>
           <li>
             <Link href={`/${locale}/methodology`} className="text-ink-secondary hover:text-ink-primary">
               {tn('methodology')}
@@ -35,17 +34,6 @@ export function Footer({ locale }: { locale: Locale }) {
             <Link href={`/${locale}/about`} className="text-ink-secondary hover:text-ink-primary">
               {tn('about')}
             </Link>
-          </li>
-        </ul>
-        <ul className="flex flex-col gap-2">
-          <li className="label-tiny">{t('contact')}</li>
-          <li>
-            <a
-              href="mailto:cadastre@dancingwithlions.com"
-              className="text-ink-secondary hover:text-ink-primary mono text-xs break-all"
-            >
-              cadastre@dancingwithlions.com
-            </a>
           </li>
         </ul>
       </div>
